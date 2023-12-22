@@ -13,8 +13,17 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: "Html",
-        items: [{ text: "html基本介绍", link: "/html基本介绍.md" }],
+        text: "介绍",
+        link: "/intro.md",
+      },
+      {
+        text: "Let's Go！",
+        items: [
+          {
+            text: "使用 verdaccio 搭建 npm 私服",
+            link: "/使用 verdaccio 搭建 npm 私服/index.md",
+          },
+        ],
       },
     ],
 
