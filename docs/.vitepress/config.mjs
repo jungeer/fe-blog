@@ -31,6 +31,10 @@ export default defineConfig({
             text: "Eslint 代码规则",
             link: "/Eslint 代码规则/index.md",
           },
+          {
+            text: "Vue2 的基本用法总结",
+            link: "/Vue2 的基本用法总结/index.md",
+          },
         ],
       },
     ],
