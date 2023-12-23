@@ -35,6 +35,10 @@ export default defineConfig({
             text: "Vue2 的基本用法总结",
             link: "/Vue2 的基本用法总结/index.md",
           },
+          {
+            text: "Css 权重计算规则",
+            link: "/Css 权重计算规则/index.md",
+          },
         ],
       },
     ],
