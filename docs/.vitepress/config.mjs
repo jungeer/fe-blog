@@ -27,6 +27,10 @@ export default defineConfig({
             text: "Prettier 代码风格",
             link: "/Prettier 代码风格/index.md",
           },
+          {
+            text: "Eslint 代码规则",
+            link: "/Eslint 代码规则/index.md",
+          },
         ],
       },
     ],
