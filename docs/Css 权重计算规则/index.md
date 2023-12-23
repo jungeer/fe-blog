@@ -21,7 +21,7 @@ button {
 button {
   color: red;
 }
-<style>
+</style>
 
 <button>这里是红色的按钮</button>
 ```
