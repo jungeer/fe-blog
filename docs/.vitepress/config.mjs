@@ -47,6 +47,10 @@ export default defineConfig({
             text: "浏览器的宏任务与微任务",
             link: "/浏览器的宏任务与微任务/index.md",
           },
+          {
+            text: "Git 常见命令",
+            link: "/Git 常见命令/index.md",
+          },
         ],
       },
     ],
