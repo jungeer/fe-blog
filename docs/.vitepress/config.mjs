@@ -23,6 +23,10 @@ export default defineConfig({
             text: "使用 verdaccio 搭建 npm 私服",
             link: "/使用 verdaccio 搭建 npm 私服/index.md",
           },
+          {
+            text: "Prettier 代码风格",
+            link: "/Prettier 代码风格/index.md",
+          },
         ],
       },
     ],
