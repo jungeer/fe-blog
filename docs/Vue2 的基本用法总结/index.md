@@ -1,6 +1,26 @@
 # Vue2 的基本用法总结
 
-## 使用计算属性（Computed Properties）
+## 响应式变量（Data）
+
+当一个 Vue 实例被创建时，它将 data 对象中的所有的 property 加入到 Vue 的响应式系统中。当这些 property 的值发生改变时，视图将会产生“响应”，即匹配更新为新的值。
+
+```html
+<template>
+  <div>{{ fullName }}</div>
+</template>
+
+<script>
+  export default {
+    data() {
+      return {
+        fullname: "jungeer",
+      };
+    },
+  };
+</script>
+```
+
+## 使用计算属性（Computed）
 
 计算属性是一种基于响应式依赖关系自动更新的属性。当依赖关系发生变化时，计算属性将自动重新计算，避免重复计算。
 
@@ -273,6 +293,114 @@ export default {
     this.helloWorld();
   },
 };
+</script>
+```
+
+## 生命周期（lifecycle）
+
+每个 Vue 实例在被创建时都要经过一系列的初始化过程——例如，需要设置数据监听、编译模板、将实例挂载到 DOM 并在数据变化时更新 DOM 等。同时在这个过程中也会运行一些叫做生命周期钩子的函数，这给了用户在不同阶段添加自己的代码的机会。
+
+```javascript
+<script>
+  export default {
+    created() {
+      console.log("created");
+    },
+    mounted() {
+      console.log("mounted");
+    },
+  }
+</script>
+```
+
+![生命周期](./lifecycle.png)
+
+## 属性（Props）(【父组件】向【子组件】)
+
+使用 props 可以接收来自父组件的数据传参（更深入使用请移步官网）
+
+```html
+<!-- child.vue -->
+<template>
+  <span>{{ name }}</span>
+</template>
+
+<script>
+  export default {
+    props: {
+      name: {
+        type: String,
+        default: "",
+      },
+    },
+  };
+</script>
+
+<!-- parent.vue -->
+<template>
+  <!-- 第一种用法（不推荐） -->
+  <child v-bind:name="name"></child>
+
+  <!-- 第二种用法（推荐） -->
+  <child :name="name"></child>
+</template>
+
+<script>
+  import Child from "Child.vue"; // 导入子组件
+
+  export default {
+    components: {
+      Child,
+    },
+    data() {
+      name: "jungeer";
+    },
+  };
+</script>
+```
+
+## 自定义事件（emit）（【子组件】向【父组件】）
+
+**子组件**通过自定义事件来与**父组件**进行逻辑交互（可以修改父组件的数据变量值，或其他操作）
+
+```html
+<!-- child.vue -->
+<template>
+  <button @click="updateParentName">点击更新父组件 name 值</button>
+</template>
+
+<script>
+  export default {
+    methods: {
+      updateParentName() {
+        this.$emit("update-parent-name", "来自子组件");
+      },
+    },
+  };
+</script>
+
+<!-- parent.vue -->
+<template>
+  <!-- 第一种用法（不推荐） -->
+  <child v-on:update-parent-name="updateName"></child>
+
+  <!-- 第二种用法（推荐） -->
+  <child @update-parent-name="updateName"></child>
+</template>
+
+<script>
+  import Child from "Child.vue"; // 导入子组件
+
+  export default {
+    data() {
+      name: "jungeer";
+    },
+    methods: {
+      updateName(name) {
+        this.name = name;
+      },
+    },
+  };
 </script>
 ```
 
