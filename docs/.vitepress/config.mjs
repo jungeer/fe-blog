@@ -43,6 +43,10 @@ export default defineConfig({
             text: "Css 权重计算规则",
             link: "/Css 权重计算规则/index.md",
           },
+          {
+            text: "浏览器的宏任务与微任务",
+            link: "/浏览器的宏任务与微任务/index.md",
+          },
         ],
       },
     ],
