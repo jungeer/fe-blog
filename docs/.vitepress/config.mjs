@@ -52,6 +52,10 @@ export default defineConfig({
             text: "Git 常见命令",
             link: "/Git 常见命令/index.md",
           },
+          {
+            text: "Chatgpt 带我五分钟写了一个 Python 爬虫",
+            link: "/Chatgpt 带我五分钟写了一个 Python 爬虫/index.md",
+          },
         ],
       },
     ],
