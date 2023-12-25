@@ -4,6 +4,7 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   title: "@前端俊哥儿乐___ 的技术博客",
   description: "个人所学与工作所得的学习思考",
+  head: [["link", { rel: "icon", href: "/fe-blog/V.png" }]],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
