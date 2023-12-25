@@ -60,6 +60,10 @@ export default defineConfig({
             text: "记一次 React-Taro 配置错误&编译体积过大",
             link: "/记一次 React-Taro 配置错误&编译体积过大/index.md",
           },
+          {
+            text: "记一次前端团队基本命名规范",
+            link: "/记一次前端团队基本命名规范/index.md",
+          },
         ],
       },
     ],
