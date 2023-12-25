@@ -56,6 +56,10 @@ export default defineConfig({
             text: "Chatgpt 带我五分钟写了一个 Python 爬虫",
             link: "/Chatgpt 带我五分钟写了一个 Python 爬虫/index.md",
           },
+          {
+            text: "记一次 React-Taro 配置错误&编译体积过大",
+            link: "/记一次 React-Taro 配置错误&编译体积过大/index.md",
+          },
         ],
       },
     ],
