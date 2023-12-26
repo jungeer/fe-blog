@@ -64,6 +64,10 @@ export default defineConfig({
             text: "记一次前端团队基本命名规范",
             link: "/记一次前端团队基本命名规范/index.md",
           },
+          {
+            text: "Html、Css、Javascript 的一篇万字总结",
+            link: "/Html、Css、Javascript 的一篇万字总结/index.md",
+          },
         ],
       },
     ],
