@@ -68,6 +68,10 @@ export default defineConfig({
             text: "Html、Css、Javascript 的一篇万字总结",
             link: "/Html、Css、Javascript 的一篇万字总结/index.md",
           },
+          {
+            text: "使用 ChatGpt 生成了一个简简简易低代码",
+            link: "/使用 ChatGpt 生成了一个简简简易低代码/index.md",
+          },
         ],
       },
     ],
