@@ -72,6 +72,10 @@ export default defineConfig({
             text: "使用 ChatGpt 生成了一个简简简易低代码",
             link: "/使用 ChatGpt 生成了一个简简简易低代码/index.md",
           },
+          {
+            text: "一行命令将项目代码转换成繁体",
+            link: "/一行命令将项目代码转换成繁体/index.md",
+          },
         ],
       },
     ],

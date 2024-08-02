@@ -24,20 +24,20 @@ import os
 import zhconv
 
 def simplify_to_traditional(root_dir):
-    for dirpath, dirnames, filenames in os.walk(root_dir):
-        for filename in filenames:
-            if filename.endswith(('.txt', '.md', '.js', '.html', '.css', ".vue")):
-                filepath = os.path.join(dirpath, filename)
-                with open(filepath, 'r', encoding='utf-8') as file:
-                    content = file.read()
-
-                converted_content = zhconv.convert(content, 'zh-hant') # 转换为繁体
-                # converted_content = zhconv.convert(content, 'zh-cn') # 转换为简体
-
-                with open(filepath, 'w', encoding='utf-8') as file:
-                    file.write(converted_content)
-
-                print(f"已处理文件: {filepath}")
+  for dirpath, dirnames, filenames in os.walk(root_dir):
+    for filename in filenames:
+      if filename.endswith(('.txt', '.md', '.js', '.html', '.css', ".vue")):
+        filepath = os.path.join(dirpath, filename)
+        with open(filepath, 'r', encoding='utf-8') as file:
+          content = file.read()
+        
+        converted_content = zhconv.convert(content, 'zh-hant') # 转换为繁体
+        # converted_content = zhconv.convert(content, 'zh-cn') # 转换为简体
+        
+        with open(filepath, 'w', encoding='utf-8') as file:
+          file.write(converted_content)
+        
+        print(f"已处理文件: {filepath}")  
 
 # 使用示例
 root_directory = 'path/to/your/project'
