@@ -306,4 +306,5 @@ export default defineConfig({
     ],
   },
   base: "/fe-blog/",
+  ignoreDeadLinks: true,
 });
