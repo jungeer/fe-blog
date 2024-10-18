@@ -86,25 +86,214 @@ export default defineConfig({
         collapsed: true,
         items: [
           {
-            text: "JavaScript基础",
+            text: "01JavaScript基础",
             collapsible: true,
             collapsed: true,
             items: [
               {
-                text: "JavaScript基础知识",
-                link: "/前端面试学习/01JavaScript基础/JavaScript基础知识.md",
+                text: "01数据类型与类型转换",
+                link: "/前端面试学习/01JavaScript基础/01数据类型与类型转换.md",
               },
               {
-                text: "作用域和闭包",
-                link: "/前端面试学习/01JavaScript基础/作用域与闭包",
+                text: "02作用域与闭包",
+                link: "/前端面试学习/01JavaScript基础/02作用域与闭包.md",
               },
               {
-                text: "原型和继承",
-                link: "/前端面试学习/01JavaScript基础/原型和继承",
+                text: "03原型与继承",
+                link: "/前端面试学习/01JavaScript基础/03原型与继承.md",
               },
               {
-                text: "异步编程",
-                link: "/前端面试学习/01JavaScript基础/异步编程",
+                text: "04异步编程",
+                link: "/前端面试学习/01JavaScript基础/04异步编程.md",
+              },
+              {
+                text: "05事件循环与任务队列",
+                link: "/前端面试学习/01JavaScript基础/05事件循环与任务队列.md",
+              },
+            ],
+          },
+          {
+            text: "02ES6+新特性",
+            collapsible: true,
+            collapsed: true,
+            items: [
+              {
+                text: "01箭头函数",
+                link: "/前端面试学习/02ES6+新特性/01箭头函数.md",
+              },
+              {
+                text: "02解构赋值与扩展运算符",
+                link: "/前端面试学习/02ES6+新特性/02解构赋值与扩展运算符.md",
+              },
+              {
+                text: "03Class与面向对象编程",
+                link: "/前端面试学习/02ES6+新特性/03Class与面向对象编程.md",
+              },
+              {
+                text: "04模块化",
+                link: "/前端面试学习/02ES6+新特性/04模块化.md",
+              },
+              {
+                text: "05生成器与迭代器",
+                link: "/前端面试学习/02ES6+新特性/05生成器与迭代器.md",
+              },
+            ],
+          },
+          {
+            text: "03Vue.js",
+            collapsible: true,
+            collapsed: true,
+            items: [
+              {
+                text: "01Vue基础",
+                link: "/前端面试学习/03Vue.js/01Vue基础.md",
+              },
+              {
+                text: "02生命周期钩子",
+                link: "/前端面试学习/03Vue.js/02生命周期钩子.md",
+              },
+              {
+                text: "03组件通信",
+                link: "/前端面试学习/03Vue.js/03组件通信.md",
+              },
+              {
+                text: "04Vue Router",
+                link: "/前端面试学习/03Vue.js/04Vue Router.md",
+              },
+              {
+                text: "05Vuex",
+                link: "/前端面试学习/03Vue.js/05Vuex.md",
+              },
+              {
+                text: "06Vue3新特性",
+                link: "/前端面试学习/03Vue.js/06Vue3新特性.md",
+              },
+            ],
+          },
+          {
+            text: "04React",
+            collapsible: true,
+            collapsed: true,
+            items: [
+              {
+                text: "01React基础",
+                link: "/前端面试学习/04React/01React基础.md",
+              },
+              {
+                text: "02组件与生命周期",
+                link: "/前端面试学习/04React/02组件与生命周期.md",
+              },
+              {
+                text: "03Hooks",
+                link: "/前端面试学习/04React/03Hooks.md",
+              },
+              {
+                text: "04组件通信",
+                link: "/前端面试学习/04React/04组件通信.md",
+              },
+              {
+                text: "05React Router",
+                link: "/前端面试学习/04React/05React Router.md",
+              },
+              {
+                text: "06Redux",
+                link: "/前端面试学习/04React/06Redux.md",
+              },
+            ],
+          },
+          {
+            text: "05前端性能优化",
+            collapsible: true,
+            collapsed: true,
+            items: [
+              {
+                text: "01资源加载优化",
+                link: "/前端面试学习/05前端性能优化/01资源加载优化.md",
+              },
+              {
+                text: "02代码分割",
+                link: "/前端面试学习/05前端性能优化/02代码分割.md",
+              },
+              {
+                text: "03DOM操作优化",
+                link: "/前端面试学习/05前端性能优化/03DOM操作优化.md",
+              },
+              {
+                text: "04图片优化",
+                link: "/前端面试学习/05前端性能优化/04图片优化.md",
+              },
+              {
+                text: "05渲染优化",
+                link: "/前端面试学习/05前端性能优化/05渲染优化.md",
+              },
+            ],
+          },
+          {
+            text: "06浏览器与安全",
+            collapsible: true,
+            collapsed: true,
+            items: [
+              {
+                text: "01浏览器渲染机制",
+                link: "/前端面试学习/06浏览器与安全/01浏览器渲染机制.md",
+              },
+              {
+                text: "02跨域",
+                link: "/前端面试学习/06浏览器与安全/02跨域.md",
+              },
+              {
+                text: "03Web安全",
+                link: "/前端面试学习/06浏览器与安全/03Web安全.md",
+              },
+              {
+                text: "04HTTPS",
+                link: "/前端面试学习/06浏览器与安全/04HTTPS.md",
+              },
+            ],
+          },
+          {
+            text: "07前端工程化与工具",
+            collapsible: true,
+            collapsed: true,
+            items: [
+              {
+                text: "01Webpack",
+                link: "/前端面试学习/07前端工程化与工具/01Webpack.md",
+              },
+              {
+                text: "02Babel",
+                link: "/前端面试学习/07前端工程化与工具/02Babel.md",
+              },
+              {
+                text: "03Lint工具",
+                link: "/前端面试学习/07前端工程化与工具/03Lint工具.md",
+              },
+              {
+                text: "04Git与版本控制",
+                link: "/前端面试学习/07前端工程化与工具/04Git与版本控制.md",
+              },
+              {
+                text: "05自动化测试",
+                link: "/前端面试学习/07前端工程化与工具/05自动化测试.md",
+              },
+            ],
+          },
+          {
+            text: "08移动端与小程序开发",
+            collapsible: true,
+            collapsed: true,
+            items: [
+              {
+                text: "01响应式布局",
+                link: "/前端面试学习/08移动端与小程序开发/01响应式布局.md",
+              },
+              {
+                text: "02移动端优化",
+                link: "/前端面试学习/08移动端与小程序开发/02移动端优化.md",
+              },
+              {
+                text: "03小程序开发",
+                link: "/前端面试学习/08移动端与小程序开发/03小程序开发.md",
               },
             ],
           },
